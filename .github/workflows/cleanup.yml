@@ -4,11 +4,10 @@ jobs:
     manage-runners:
         runs-on: ubuntu-latest
         steps:
-          - uses: LorenzoDrudi/clean-up-offline-github-runners@appAuth
+          - uses: LorenzoDrudi/clean-up-offline-github-runners@develop
             env:
               APP_ID: ${{ secrets.APP_ID }}
               APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
             with:
               repo-name: 'dummy-repo-ephemeral-runners'
               repo-owner: 'LorenzoDrudi'
-              personal-access-token: '${{ secrets.ACCESS_TOKEN }}'
