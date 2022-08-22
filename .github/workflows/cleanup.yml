@@ -4,7 +4,7 @@ jobs:
     manage-runners:
         runs-on: ubuntu-latest
         steps:
-          - uses: LorenzoDrudi/clean-up-offline-github-runners@develop
+          - uses: LorenzoDrudi/clean-up-offline-github-runners@pathSub
             env:
               APP_ID: ${{ secrets.APP_ID }}
               APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
